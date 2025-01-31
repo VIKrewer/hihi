@@ -1,0 +1,121 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #f9d9e6;
+  color: #ff6f91;
+  margin: 0;
+  padding: 0;
+}
+
+#start-screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#play-button {
+  background-color: #ff6f91;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#play-button:hover {
+  background-color: #ff4d79;
+}
+
+.hidden {
+  display: none;
+}
+
+.hearts {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.heart {
+  width: 30px;
+  height: 30px;
+  animation: heartbeat 1.5s infinite;
+  filter: invert(24%) sepia(98%) saturate(7478%) hue-rotate(355deg) brightness(102%) contrast(102%); /* Makes the heart red */
+}
+
+.heart:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.heart:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.heart:nth-child(3) {
+  animation-delay: 1s;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border: 2px solid #ff6f91;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+  background-color: #ffe6f0;
+}
+
+#message-box {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#replay-button {
+  background-color: #ff6f91;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+#replay-button:hover {
+  background-color: #ff4d79;
+}
+

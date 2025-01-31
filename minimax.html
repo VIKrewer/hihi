@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="start-screen">
+      <button id="play-button">Quer jogar um jogo?</button>
+    </div>
+
+    <div id="loading-screen" class="hidden">
+      <div class="hearts">
+        <img
+          src="https://www.svgrepo.com/show/525363/heart-angle.svg"
+          alt="Coração"
+          class="heart"
+        />
+        <img
+          src="https://www.svgrepo.com/show/525363/heart-angle.svg"
+          alt="Coração"
+          class="heart"
+        />
+        <img
+          src="https://www.svgrepo.com/show/525363/heart-angle.svg"
+          alt="Coração"
+          class="heart"
+        />
+      </div>
+    </div>
+
+    <div id="game-screen" class="hidden">
+      <div id="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+      </div>
+      <div id="message-box" class="hidden"></div>
+      <button id="replay-button" class="hidden">Jogar Novamente ❤️</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
