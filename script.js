@@ -143,7 +143,7 @@ function verificarEstadoJogo() {
           celulas[index].textContent = '❤️';
         }
       });
-      caixaMensagem.textContent = `Eu te amo Heloísa ❤️`;
+      caixaMensagem.textContent = `Eu te amo Heloísa, minha garota inteligentona ❤️`;
     } else {
       caixaMensagem.textContent = `${resultado.vencedor === 'O' ? 'Você' : 'Bot'} venceu!`;
     }
